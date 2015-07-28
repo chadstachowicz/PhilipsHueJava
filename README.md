@@ -11,12 +11,13 @@ The app takes 7 params..
 * param 5 = 0-255 for the saturation level (255 highest)
 * param 6 = 0-255 for the brightness level (255 highest)
 * param 7 = 0-65535 for the color
+* param 8 = "none, select (1 sec flash) or lselect (30 sec flash)" for the alert setting
 
 
 Example of compiling and running the app...
 ```c
-Chads-iMac:Philips-Hue-Java cstachowicz$ javac ChangeLightColorHue.java
-Chads-iMac:Philips-Hue-Java cstachowicz$ java ChangeLightColorHue 192.168.1.7 ad32e8a371850172530f6f64a8ab33 true 20 20 60000
+Chads-iMac:Philips-Hue-Java cstachowicz$ javac PhilipsHue.java
+Chads-iMac:Philips-Hue-Java cstachowicz$ java PhilipsHue 192.168.1.7 ad32e8a371850172530f6f64a8ab33 All true 20 20 60000 select
 {"on": true, "sat": 20, "bri": 20, "hue":60000}
 Output from Server .... 
 
